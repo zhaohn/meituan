@@ -1,0 +1,145 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    overflow-y: hidden;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    @include sizing;
+    @include justify(space-between);
+    @include align;
+    padding: 0 pxTorem(15px);
+    font-size: pxTorem(15px);
+    background: #06c1ae;
+    color: #fff;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 9999;
+    .icon {
+        font-size: pxTorem(20px);
+    }
+    .search {
+        width: 70%;
+        input {
+            width: 100%;
+            height: pxTorem(30px);
+            background: #21897d;
+            border-radius: pxTorem(5px);
+            font-size: pxTorem(14px);
+            color: #06c1ae;
+            padding-left: pxTorem(15px);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include box_flex;
+    @include direction(column);
+    @include flex;
+    flex-shrink: 0;
+    .show {
+        flex-shrink: 0;
+        width: 100%;
+        border-bottom: 1px solid #c6c0b3;
+    }
+    .swiper-container {
+        width: 100%;
+        border-bottom: 1px solid #c6c0b3;
+    }
+    .list {
+        width: 100%;
+        @include box_flex;
+        @include flexWrap(wrap);
+        dl {
+            width: 20%;
+            @include box_flex;
+            @include direction(column);
+            @include justify;
+            @include align;
+            font-size: pxTorem(14px);
+            margin-top: pxTorem(15px);
+            dt>img {
+                width: pxTorem(50px);
+                height: pxTorem(50px);
+            }
+            dd {
+                margin-top: pxTorem(5px);
+            }
+        }
+    }
+    .pagination {
+        margin-left: 45%;
+        margin-top: pxTorem(8px);
+    }
+    .swiper-pagination-bullet {
+        width: pxTorem(10px);
+        height: pxTorem(10px);
+    }
+    .bk {
+        width: 100%;
+        height: pxTorem(13px);
+        background: #eee;
+    }
+    .yourlike {
+        @include box_flex;
+        @include direction(column);
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        h1 {
+            width: 100%;
+            line-height: pxTorem(30px);
+            font-size: pxTorem(14px);
+            border-bottom: 1px solid #c6c0b3;
+        }
+        .shop {
+            width: 100%;
+            @include box_flex;
+            @include direction(column);
+            dl {
+                width: 100%;
+                @include box_flex;
+                padding: pxTorem(10px) 0;
+                @include sizing;
+                border-bottom: 1px solid #c6c0b3;
+                dt>img {
+                    width: pxTorem(75px);
+                    height: pxTorem(75px);
+                }
+                dd {
+                    margin-left: pxTorem(10px);
+                    h2 {
+                        font-size: pxTorem(15px);
+                        line-height: pxTorem(25px);
+                    }
+                    h3 {
+                        font-size: pxTorem(13px);
+                        line-height: pxTorem(20px);
+                    }
+                    h4 {
+                        margin-top: pxTorem(15px);
+                        span:first-child {
+                            color: #06c1ae;
+                            b {
+                                font-size: pxTorem(17px);
+                            }
+                        }
+                        span:nth-child(2) {
+                            margin-left: pxTorem(8px);
+                        }
+                        span:nth-child(3) {
+                            margin-left: pxTorem(70px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

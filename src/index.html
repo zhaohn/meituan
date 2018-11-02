@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./scss/swiper-4.3.5.min.css">
+    <script src="js/flexible.js"></script>
+    <script src="./js/swiper-4.3.5.min.js"></script>
+    <script src="./js/better-scroll.js"></script>
+    <style>
+        .all {
+            position: relative;
+        }
+        
+        .pullDown,
+        .pullUp {
+            height: 50px;
+            width: 100%;
+            background: #eee;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+        }
+        
+        .pullDown {
+            top: -50px;
+        }
+        
+        .pullUp {
+            bottom: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>北京</span>
+            <div class="search">
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </div>
+            <span><i class="icon iconfont icon-wode-xuanzhong"></i></span>
+        </header>
+        <section>
+            <div class="all">
+                <div class="pullDown" id="pullDown">下拉刷新</div>
+                <img src="img/download_banner.png" alt="" class="show">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide list">
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/1.png" alt=""></dt>
+                                <dd>美食</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide list">
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="img/2.png" alt=""></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class="bk"></div>
+                <div class="yourlike">
+                    <h1>猜你喜欢</h1>
+                    <div class="shop">
+                        <!-- <dl>
+                            <dt><img src="img/buy1.png" alt=""></dt>
+                            <dd>
+                                <h2>醉面 一碗醉香的牛肉面</h2>
+                                <h3>[7店通用]单人套餐</h3>
+                                <h4><span><b>17.5</b>元</span><span>门市价：20元</span><span>已售21331</span></h4>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="img/buy1.png" alt=""></dt>
+                            <dd>
+                                <h2>醉面 一碗醉香的牛肉面</h2>
+                                <h3>[7店通用]单人套餐</h3>
+                                <h4><span><b>17.5</b>元</span><span>门市价：20元</span><span>已售21331</span></h4>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="img/buy1.png" alt=""></dt>
+                            <dd>
+                                <h2>醉面 一碗醉香的牛肉面</h2>
+                                <h3>[7店通用]单人套餐</h3>
+                                <h4><span><b>17.5</b>元</span><span>门市价：20元</span><span>已售21331</span></h4>
+                            </dd>
+                        </dl> -->
+                    </div>
+                </div>
+                <div class="pullUp" id="pullUp">上拉加载</div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        var myswiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.pagination',
+
+            }
+        })
+        var Bscroll = new BScroll('section', {
+            probetype: 2,
+            scrollbar: true
+        })
+        Bscroll.on('scroll', function() {
+            console.log(1)
+            if (this.y < this.maxScrollY - 50) {
+                $('#pullUp').html('释放加载更多…').addClass('flip');
+            } else if (this.y < this.maxScrollY - 10) {
+                $('#pullUp').html('上拉加载').removeClass('flip');
+            } else if (this.y > 50) {
+                $('#pullDown').html('释放刷新…').addClass('flip');
+            } else if (this.y > 10) {
+                $('#pullDown').html('下拉刷新…').removeClass('flip');
+            }
+        });
+        Bscroll.on('scrollEnd', function() {
+            if ($('#pullUp').hasClass('flip')) {
+
+                pullUp();
+                $('#pullUp').html('上拉加载…').removeClass('flip');
+
+
+            } else if ($('#pullDown').hasClass('flip')) {
+                pullDown();
+                $('#pullDown').html('下拉刷新').removeClass('flip');
+            }
+        });
+    </script>
+</body>
+
+</html>
